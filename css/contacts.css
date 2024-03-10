@@ -1,0 +1,205 @@
+:root {
+    --font: 'Russo One', sans-serif;
+    --font-text: 'Lunasima', sans-serif;
+    --color: #1a1a1a;
+    --colorBtn: #C9FF36;
+    --boxShadow: 0 0 5px #000;
+}
+
+.contacts_top {
+    font-family: var(--font-text);
+}
+
+.contacts_top-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contacts_top-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacts_top-item {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.contacts_top-item b {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.contacts_top-item-title {
+    font-size: 24px;
+    font-family: var(--font-text);
+}
+
+.contacts_forms {
+    background-color: transparent;
+    color: #1a1a1a;
+}
+
+.cantacts_forms-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.inputs {
+    padding: 15px 10px 10px;
+    width: 700px;
+    height: 50px;
+    font-size: 14px;
+    border: .5px solid #1a1a1a;
+    transition: all .3s;
+}
+
+.inputs:focus~.label_inp {
+    top: -25%;
+    padding: 3px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.inputs:focus {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #1a1a1a;
+
+    transition: all .3s;
+}
+
+.group_inp {
+    position: relative;
+}
+
+.label_inp {
+    position: absolute;
+    top: 8%;
+    left: 1%;
+    font-size: 14px;
+    font-family: var(--font-text);
+    transition: all .3s;
+
+}
+
+.inputs:focus~.textarea {
+    top: -15%;
+}
+
+#Message {
+    resize: none;
+    padding: 23px 10px 0;
+    height: 100px;
+}
+
+.faq {
+    background-color: transparent;
+    color: #1a1a1a;
+}
+
+.faq-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contentBx {
+    max-width: 100%;
+    margin: 10px 0px;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    height: 44px;
+    color: #000;
+    text-transform: uppercase;
+    transition: all .4s;
+}
+
+.label:hover {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    transition: all .4s;
+}
+
+.accordion {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.accordion .contentBx .content {
+    overflow: hidden;
+    height: 0;
+    color: #000;
+    transition: all .4s;
+}
+
+.text {
+    color: #000;
+}
+
+.accordion .contentBx.active .content {
+    height: 100px;
+    padding: 10px;
+}
+
+.accordion .contentBx svg {
+    margin-right: 15px;
+    width: 25px;
+    height: 35px;
+    transition: all .4s;
+}
+
+.accordion .contentBx.active svg {
+    transform: rotate(90deg);
+    transition: all .4s;
+}
+
+@media screen and (max-width: 1024px) {
+    .contacts_top-list {
+        flex-wrap: wrap;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .group_inp {
+        width: 100%;
+    }
+
+    .inputs {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 485px) {
+    .accordion .contentBx.active .content {
+        height: 277px;
+        padding: 10px;
+    }
+
+    .label {
+        font-size: 16px;
+        height: 55px;
+    }
+}

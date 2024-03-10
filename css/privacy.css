@@ -1,0 +1,29 @@
+.privacy-top__content {
+	width: 100%;
+	padding: 50px 0;
+}
+
+.privacy-top__title {
+	font-size: clamp(1.25rem, 0.9286rem + 1.4286vw, 2.25rem);
+	width: 70%;
+	margin: 0 auto 25px;
+	text-align: center;
+}
+
+.privacy-top__black,
+.privacy-top__white {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.privacy-top__black-title {
+	margin-bottom: 20px;
+	font-family: var(--font);
+	font-size: clamp(1.25rem, 1.1496rem + 0.4464vw, 1.5625rem);
+}
+
+.privacy-top__white-title {
+	margin-bottom: 20px;
+	font-family: var(--font);
+	font-size: clamp(1.25rem, 1.1496rem + 0.4464vw, 1.5625rem);
+}

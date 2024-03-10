@@ -1,0 +1,262 @@
+:root {
+    --font: 'Russo One', sans-serif;
+    --font-text: 'Lunasima', sans-serif;
+    --color: #1a1a1a;
+    --colorBtn: #C9FF36;
+    --boxShadow: 0 0 5px #000;
+}
+
+.about_top,
+.adobe_ai,
+.explore,
+.info-comp,
+.contacts_top,
+.contacts_forms,
+.faq {
+    background-color: #000;
+    color: #fafafa;
+    padding: 50px 0;
+}
+
+.about_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.about_group {
+    width: 500px;
+}
+
+.about_title,
+.adobe_ai-title,
+.explore_title,
+.contacts_top-title,
+.cantacts_forms-title,
+.faq-title {
+    font-size: 44px;
+    font-family: var(--font-text);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about_text {
+    font-size: 22px;
+}
+
+.about_group-img {
+    width: 400px;
+    height: 400px;
+}
+
+.adobe_ai-title {
+    text-align: center;
+}
+
+.adobe_ai-text,
+.explore_text,
+.histori_user-text {
+    width: 800px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.adobe_ai-img {
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.adobe_ai-list,
+.explore_list,
+.histori_user-list,
+.info-comp-list {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.adobe_ai-item,
+.histori_user-item {
+    width: 330px;
+}
+
+.adobe_ai-list-title,
+.explore_list-title {
+    font-size: 20px;
+    font-family: var(--font-text);
+    margin-bottom: 20px;
+}
+
+.adobe_ai-list-text {
+    margin-bottom: 20px;
+}
+
+.adobe_ai-list-link {
+    text-decoration: underline;
+    font-family: var(--font-text);
+    transition: all .4s;
+}
+
+.adobe_ai-list-link:hover,
+.explore_list-link:hover,
+.histori_user-link:hover {
+    opacity: .6;
+    transition: all .4s;
+}
+
+.explore {
+    background-color: transparent;
+    color: #1a1a1a;
+}
+
+.explore_title {
+    text-align: center;
+}
+
+.explore_list-item {
+    width: 240px;
+}
+
+.explore_list-img,
+.histori_user-list-img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.explore_list-text {
+    margin-bottom: 20px;
+}
+
+.explore_list-link {
+    font-family: var(--font-text);
+    color: #1473e6;
+    transition: all .4s;
+}
+
+.histori_user {
+    padding: 100px 0 60px;
+    background-color: rgba(240, 240, 240, .5);
+}
+
+.histori_user-title {
+    font-size: 32px;
+    font-family: var(--font-text);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.histori_user-text {
+    font-size: 18px;
+}
+
+.histori_user-item {
+    width: 330px;
+}
+
+.histori_user-link {
+    display: block;
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: #1473e6;
+    text-decoration: underline;
+    text-align: center;
+    transition: all .4s;
+}
+
+.info-comp {
+    background-color: transparent;
+}
+
+.info-comp-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 148px;
+}
+
+.info-comp-item-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.info-comp-link {
+    color: #1473e6;
+}
+
+.info-comp-link:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .adobe_ai-img {
+
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about_group-img {
+        display: none;
+    }
+
+    .adobe_ai-text,
+    .explore_text,
+    .histori_user-text {
+        width: 100%;
+    }
+
+    .explore_list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 485px) {
+
+    .about_top,
+    .adobe_ai,
+    .explore,
+    .info-comp,
+    .contacts_top,
+    .contacts_forms,
+    .faq {
+        padding: 40px 0;
+    }
+.info-comp-title{
+    color: #000;
+}
+    .about_group {
+        width: 100%;
+    }
+
+    .about_title,
+    .adobe_ai-title,
+    .explore_title,
+    .contacts_top-title,
+    .cantacts_forms-title,
+    .faq-title {
+        font-size: 25px;
+        font-family: var(--font-text);
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .about_text {
+        font-size: 14px;
+    }
+
+    .adobe_ai-list,
+    .explore_list,
+    .histori_user-list,
+    .info-comp-list {
+        flex-wrap: wrap;
+    }
+
+    
+}
